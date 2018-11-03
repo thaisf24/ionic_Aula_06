@@ -1,0 +1,28 @@
+<!--
+  Generated template for the GeneroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+   Aluno:Diego Silva Santini dos Santos RA:816117855
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Genero</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+    <ion-list >
+        <ion-item *ngFor="let genero of generos"(click)="irParaGenero(genero)">
+        <h2>{{genero.nome}}</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>
