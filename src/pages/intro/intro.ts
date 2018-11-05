@@ -4,7 +4,6 @@ import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the IntroPage page.
- * Aluno:Henrique de Lima Ramos   816114779
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
